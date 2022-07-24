@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Giá hoa quả</h1>
+    <input type="text" name="" id="fruit">
+    <button onclick="check()">Xem giá</button>
+    <p id="result"></p>
+    <script>
+       function check(){
+        let name = document.getElementById('fruit').value;
+         switch(name){
+            case 'ổi':
+            case 'Ổi':
+            case 'ỔI':
+               document.getElementById('result').innerHTML = '20000vnd/kg';
+               break;
+            case 'dưa hấu':
+            case 'Dưa Hấu':
+            case 'DƯA HẤU':
+            case 'Dưa hấu':
+                document.getElementById('result').innerHTML = '20000vnd/kg';
+                break;
+            case 'táo':
+            case 'Táo':
+            case 'TÁO':
+                document.getElementById('result').innerHTML = '30000vnd/kg';
+                break;
+            case 'xoài':
+            case 'Xoài':
+            case 'XOÀI':
+                document.getElementById('result').innerHTML = '30000vnd/kg';
+                break;
+            case 'cam':
+            case 'Cam':
+            case 'CAM':
+                document.getElementById('result').innerHTML = '40000vnd/kg';
+                break;
+            case 'chôm chôm':
+            case 'Chôm Chôm':
+            case 'CHÔM CHÔM':
+            case 'Chôm chôm':
+                document.getElementById('result').innerHTML = '40000vnd/kg';
+                break;
+            case 'măng cụt':
+            case 'Măng Cụt':
+            case 'MĂNG CỤT':
+            case 'Măng cụt':
+                document.getElementById('result').innerHTML = '50000vnd/kg';
+                break;
+            
+            default:
+                document.getElementById('result').innerHTML = 'Đang cập nhật giá';
+         }
+       }
+    </script>
+</body>
+</html>
